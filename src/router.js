@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const Home = () => import('@/pages/home')
+const LoginSuccess = () => import('@/pages/login-success')
 
 Vue.use(Router)
 
@@ -11,6 +12,10 @@ const router = new Router({
       path: '/',
       name: '首页',
       component: Home
+    },{
+      path: '/loginSuccess',
+      name: '首页',
+      component: LoginSuccess
     }
   ]
 })
