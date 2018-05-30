@@ -52,9 +52,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .index {
     text-align: center;
-    font-size: 24px;
+    font-size: 24pr;
 }
 </style>
