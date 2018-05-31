@@ -6,6 +6,10 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import router from './router'
 import store from './store'
+import Vconsole from 'vconsole'
+var vconsole = new Vconsole()
+
+
 
 Vue.config.productionTip = false
 
