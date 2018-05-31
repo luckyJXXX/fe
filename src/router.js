@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 const Home = () => import('@/pages/home')
 const LoginSuccess = () => import('@/pages/login-success')
+const List = () => import('@/pages/list')
 
 Vue.use(Router)
 
@@ -16,6 +17,10 @@ const router = new Router({
       path: '/loginSuccess',
       name: '首页',
       component: LoginSuccess
+    },{
+      path: '/list',
+      name: '列表页',
+      component: List
     }
   ]
 })
