@@ -12,15 +12,24 @@ const router = new Router({
     {
       path: '/',
       name: '首页',
-      component: Home
+      component: Home,
+      meta: {
+        title: '首页'
+      }
     },{
       path: '/loginSuccess',
       name: '首页',
-      component: LoginSuccess
+      component: LoginSuccess,
+      meta: {
+        title: '登录成功'
+      }
     },{
       path: '/list',
       name: '列表页',
-      component: List
+      component: List,
+      meta: {
+        title: '列表'
+      }
     }
   ]
 })

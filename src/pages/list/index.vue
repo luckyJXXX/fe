@@ -1,7 +1,8 @@
 <template>
   <div v-show="loading">
     <div class="list-box box box-tb" v-if="data">
-      <div class="list-item box box-lr" v-for="(item, index) of data" :key="index">
+      <div class="list-item box box-lr" 
+      v-for="(item, index) of data" :key="index" @click="golist">
         <img src="../../assets/logo.png" alt="">
         <div class="desc">{{item.desc}}</div>
       </div>
@@ -25,7 +26,10 @@ export default {
     this.getList();
   },
   methods: {
-    ...mapActions("list", ["getList"])
+    ...mapActions("list", ["getList"]),
+    golist() {
+      this.$router.push("/loginSuccess");
+    }
   }
 };
 </script>
